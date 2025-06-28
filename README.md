@@ -96,26 +96,6 @@ The application provides a user-friendly graphical interface with the following 
 - **Parameter Adjustment**: Interactive sliders and controls for fine-tuning
 - **Batch Processing**: Apply operations to multiple images
 
-### Command Line Interface
-
-For advanced users, individual modules can be imported and used programmatically:
-
-```python
-from modules.intensity_transform import IntensityTransform
-from modules.spatial_filters import SpatialFilters
-
-# Load an image
-image = cv2.imread('input.jpg')
-
-# Apply intensity transformation
-intensity_processor = IntensityTransform()
-enhanced = intensity_processor.histogram_equalization(image)
-
-# Apply spatial filtering
-spatial_processor = SpatialFilters()
-filtered = spatial_processor.gaussian_filter(enhanced, kernel_size=5)
-```
-
 ## Project Structure
 
 ```
@@ -138,85 +118,12 @@ SmartImageSuite/
     └── final_project_report.pdf
 ```
 
-## Dependencies
-
-### Core Dependencies
-- `numpy` - Numerical computing
-- `opencv-python` - Computer vision operations
-- `tkinter` - GUI framework (included with Python)
-
-### Optional Dependencies
-- `pywt` - PyWavelets for wavelet operations
-- `matplotlib` - Plotting and visualization
-- `scikit-image` - Additional image processing functions
-
-## Examples
-
-### Basic Image Enhancement
-
-```python
-from modules.intensity_transform import IntensityTransform
-from modules.color_processing import ColorProcessing
-
-# Load image
-image = cv2.imread('input.jpg')
-
-# Enhance contrast
-intensity_processor = IntensityTransform()
-enhanced = intensity_processor.histogram_equalization(image)
-
-# Adjust color balance
-color_processor = ColorProcessing()
-balanced = color_processor.white_balance(enhanced)
-```
-
-### Advanced Filtering
-
-```python
-from modules.spatial_filters import SpatialFilters
-from modules.frequency_filters import FrequencyFilters
-
-# Apply bilateral filtering
-spatial_processor = SpatialFilters()
-filtered = spatial_processor.bilateral_filter(image, d=9, sigma_color=75, sigma_space=75)
-
-# Apply frequency domain filtering
-freq_processor = FrequencyFilters()
-low_pass = freq_processor.butterworth_low_pass_filter(filtered, cutoff_freq=0.3)
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
-
-- ASU Image Processing Course for project requirements
-- OpenCV community for computer vision algorithms
-- PyWavelets developers for wavelet processing capabilities
-
 ## Contact
 
-- **Author**: [Your Name]
-- **Email**: [your.email@asu.edu]
-- **Course**: ASU Image Processing Course
-- **Year**: 2024
-
-## Version History
-
-- **v1.0.0** - Initial release with basic functionality
-- **v1.1.0** - Added wavelet processing capabilities
-- **v1.2.0** - Enhanced GUI and added batch processing
-- **v1.3.0** - Improved performance and added documentation
-
----
-
-**Note**: This project is developed as part of the ASU Image Processing Course curriculum. It serves as a comprehensive demonstration of various image processing techniques and their practical applications. 
+- **Author**: Eslam Mtrawy
+- **Email**: [Eselmtrawy@gmail.com]
