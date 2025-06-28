@@ -1,6 +1,6 @@
 # SmartImageSuite
 
-A comprehensive image processing and analysis toolkit developed for ASU Image Processing Course.
+A comprehensive image processing and analysis toolkit.
 
 ## Overview
 
